@@ -3,6 +3,7 @@ applications:
   host: demodra
   name: demodra
   command: node app.js
+  buildpack: sdk-for-nodejs
   path: .
   instances: 1
   memory: 128M
