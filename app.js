@@ -10,9 +10,6 @@ EJS.close = "</ejs>";
 
 var host = process.env.PORT ? '0.0.0.0' : 'localhost';
 var port = (process.env.PORT || 3456);
-console.log('App Name...');
-var appName = process.env.VCAP_APPLICATION ? JSON.parse(process.env.VCAP_APPLICATION).name : 'localhost';
-console.log(appName);
 var url = require('url').format({hostname: host, port: port, protocol: 'http'});
 
 var app = express();
